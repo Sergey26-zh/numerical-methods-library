@@ -1,4 +1,17 @@
 package org.example.core;
 
-public class NumericalResult {
+/**
+ * Класс, представляющий результат выполнения численного метода.
+ * @param value найденное приближённое значение решения
+ * @param iterations количество выполненных итераций
+ * @param error оценка погрешности
+ * @param converged признак успешной сходимости метода
+ */
+public record NumericalResult(
+    double value,
+    int iterations,
+    double error,
+    boolean converged
+) {
+
 }

@@ -1,4 +1,9 @@
 package org.example.core;
 
-public class DifferentiableFunction {
+/**
+ * Интерфейс для представления дифференцируемой функции.
+ */
+public interface DifferentiableFunction extends MathFunction {
+
+  double derivative(double x);
 }

@@ -1,4 +1,7 @@
 package org.example.exception;
 
-public class SingularMatrixException {
+public class SingularMatrixException extends RuntimeException {
+  public SingularMatrixException(String message) {
+    super(message);
+  }
 }
